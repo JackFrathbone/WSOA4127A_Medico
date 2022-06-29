@@ -3,8 +3,15 @@ using UnityEngine;
 public class GameManager : Singleton<GameManager>
 {
     [Header("References")]
-    public PlayerController playerController;
-    public PlayerInputController PlayerInputController;
+    [HideInInspector] public PlayerController playerController;
+    [HideInInspector] public PlayerInputController PlayerInputController;
+    [HideInInspector] public TimeKeeper timeKeeper;
+    private TimeKeeper _timeKeeper;
+
+    private void Start()
+    {
+        _timeKeeper = GetComponent<TimeKeeper>();
+    }
 
     public void Pause()
     {
@@ -16,5 +23,15 @@ public class GameManager : Singleton<GameManager>
     {
         playerController.disableMovement = false;
         PlayerInputController.disableInput = false;
+    }
+
+    public void StartClock()
+    {
+        _timeKeeper.enabled = true;
+    }
+
+    public void StopClock()
+    {
+        _timeKeeper.enabled = false;
     }
 }
