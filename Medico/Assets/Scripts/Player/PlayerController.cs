@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
-        GameManager.instance.playerController = this;
+        GameManager.Instance.playerController = this;
     }
 
     private void Start()

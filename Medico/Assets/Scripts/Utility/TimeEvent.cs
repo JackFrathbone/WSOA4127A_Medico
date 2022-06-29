@@ -19,7 +19,7 @@ public class TimeEvent : MonoBehaviour
 
     private void Start()
     {
-        GameManager.instance.timeKeeper.AddTimeEvent(this);
+        GameManager.Instance.timeKeeper.AddTimeEvent(this);
 
         _eventTime = TimeSpan.FromDays(_eventDay) + TimeSpan.FromHours(_eventHour);
     }
@@ -27,7 +27,7 @@ public class TimeEvent : MonoBehaviour
     private void OnDisable()
     {
         if (!this.gameObject.scene.isLoaded) return;
-        GameManager.instance.timeKeeper.RemoveTimeEvent(this);
+        GameManager.Instance.timeKeeper.RemoveTimeEvent(this);
     }
 
     public void CheckTimePass(TimeSpan trackedTime)

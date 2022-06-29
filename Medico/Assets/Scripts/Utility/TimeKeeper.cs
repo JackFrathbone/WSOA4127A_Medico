@@ -18,7 +18,7 @@ public class TimeKeeper : MonoBehaviour
 
     private void Awake()
     {
-        GameManager.instance.timeKeeper = this;
+        GameManager.Instance.timeKeeper = this;
     }
 
     private void Start()
@@ -54,6 +54,11 @@ public class TimeKeeper : MonoBehaviour
     private void OnDisable()
     {
         Debug.Log("Time keeping has paused");
+    }
+
+    private void OnEnable()
+    {
+        Debug.Log("Time keeping has continued");
     }
 
     private string GetTimeAsText()

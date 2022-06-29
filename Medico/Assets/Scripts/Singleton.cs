@@ -6,7 +6,7 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
     public bool keepAlive = false;
 
     private static T _instance = null;
-    public static T instance
+    public static T Instance
     {
         get
         {
@@ -24,7 +24,7 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
         }
     }
 
-    static public bool isInstanceAlive
+    static public bool IsInstanceAlive
     {
         get { return _instance != null; }
     }
@@ -34,7 +34,7 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
         if (_instance != null)
         {
             if (verbose)
-                Debug.Log("SingleAccessPoint, Destroy duplicate instance " + name + " of " + instance.name);
+                Debug.Log("SingleAccessPoint, Destroy duplicate instance " + name + " of " + Instance.name);
             Destroy(gameObject);
             return;
         }
@@ -54,7 +54,7 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
         }
 
         if (verbose)
-            Debug.Log("SingleAccessPoint instance found " + instance.GetType().Name);
+            Debug.Log("SingleAccessPoint instance found " + Instance.GetType().Name);
 
     }
 

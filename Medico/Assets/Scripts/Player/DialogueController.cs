@@ -37,6 +37,11 @@ public class DialogueController : MonoBehaviour
 
             _currentTargetDialogue.hasRun = true;
             _currentTargetDialogue.dialogueEvent.Invoke();
+
+            if(_currentTargetDialogue.clue != null)
+            {
+                GameManager.Instance.clueManager.AddClue(_currentTargetDialogue.clue);
+            }
         }
         else
         {
@@ -60,7 +65,7 @@ public class DialogueController : MonoBehaviour
         else 
         {
             _dialogueUI.SetActive(false);
-            GameManager.instance.UnPause();
+            GameManager.Instance.UnPause();
         }
 
     }

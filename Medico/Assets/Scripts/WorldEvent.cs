@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Dialogue", menuName = "ScriptableObjects/Event", order = 1)]
+[CreateAssetMenu(fileName = "Event", menuName = "ScriptableObjects/Event", order = 1)]
 public class WorldEvent : ScriptableObject
 {
     [Header("Settings")]

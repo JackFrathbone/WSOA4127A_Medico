@@ -13,7 +13,8 @@ public class NPCDialogue : ScriptableObject
     [Header("Conditionals")]
     public List<WorldEvent> eventsToCheck;
 
-    [Header("Events to Run on Finish")]
+    [Header("Outcomes")]
+    public Clue clue;
     public UnityEvent dialogueEvent;
 
     //Check if all relevant events have passed

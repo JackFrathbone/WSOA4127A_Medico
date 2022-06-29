@@ -17,6 +17,7 @@ MonoBehaviour:
   - What do you want?
   eventsToCheck:
   - {fileID: 11400000, guid: f8f3d7f08d6e9e54ea1688effa0776ca, type: 2}
+  clue: {fileID: 11400000, guid: 7d699b7a6d22eb94fb2261f9607d6f48, type: 2}
   dialogueEvent:
     m_PersistentCalls:
       m_Calls: []

@@ -32,7 +32,7 @@ public class NPCManager : MonoBehaviour
     private void Start()
     {
         _timeLeftToLive = TimeSpan.FromMinutes(minutesLeftToLive) + TimeSpan.FromHours(hoursLeftToLive);
-        _timeScale = GameManager.instance.timeKeeper.GetTimescale();
+        _timeScale = GameManager.Instance.timeKeeper.GetTimescale();
 
         _spriteRenderer = GetComponent<SpriteRenderer>();
 
