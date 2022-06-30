@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfcda8a24fd8982498053935891f869c, type: 3}
   m_Name: Injury_Burn
   m_EditorClassIdentifier: 
-  _injuryName: Burn
-  _injurySeverityMin: 30
-  _injurySeverityMax: 60
+  injuryName: Burn
+  injurySeverityMin: 30
+  injurySeverityMax: 60

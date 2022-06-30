@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfcda8a24fd8982498053935891f869c, type: 3}
   m_Name: Injury_Infection
   m_EditorClassIdentifier: 
-  _injuryName: Infection
-  _injurySeverityMin: 10
-  _injurySeverityMax: 30
+  injuryName: Infection
+  injurySeverityMin: 10
+  injurySeverityMax: 30

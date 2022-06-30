@@ -66,6 +66,7 @@ public class DialogueController : MonoBehaviour
         {
             _dialogueUI.SetActive(false);
             GameManager.Instance.UnPause();
+            GameManager.Instance.StartClock();
         }
 
     }

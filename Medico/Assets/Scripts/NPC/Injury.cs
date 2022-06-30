@@ -4,8 +4,8 @@ using UnityEngine;
 public class Injury : ScriptableObject
 {
     [Header("Data")]
-    public string _injuryName;
+    public string injuryName;
     //Time in minutes
-    public float _injurySeverityMin;
-    public float _injurySeverityMax;
+    public float injurySeverityMin;
+    public float injurySeverityMax;
 }

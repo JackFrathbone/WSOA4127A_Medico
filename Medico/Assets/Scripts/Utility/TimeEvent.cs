@@ -58,7 +58,7 @@ public class TimeEvent : MonoBehaviour
         {
             foreach(Injury injury in _injuriesToAdd)
             {
-                npcManager.AddInjury(injury);
+                npcManager.AddInjury(injury, false);
             }
         }
     }

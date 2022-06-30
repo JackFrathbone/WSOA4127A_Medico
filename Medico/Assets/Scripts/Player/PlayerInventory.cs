@@ -22,6 +22,7 @@ public class PlayerInventory : MonoBehaviour
 
     private void Start()
     {
+        GameManager.Instance.playerInventory = this;
         UpdateInventoryText();
     }
 
@@ -62,7 +63,7 @@ public class PlayerInventory : MonoBehaviour
         UpdateInventoryText(); ;
     }
 
-    private void UseTreatment(string name, int amount)
+    public void UseTreatment(string name, int amount)
     {
         switch (name)
         {
@@ -87,6 +88,27 @@ public class PlayerInventory : MonoBehaviour
         }
 
         UpdateInventoryText(); ;
+    }
+
+    public int GetTreatmentAmount(string name)
+    {
+        switch (name)
+        {
+            case "bandage":
+                return _bandageAmount;
+            case "gauze":
+                return _GauzeAmount;
+            case "antiSeptic":
+                return _AntisepticAmount;
+            case "antiBiotic":
+                return _AntibioticAmount;
+            case "medicine":
+                return _MedicineAmount;
+            case "herbalRemedy":
+                return _HerbalremedyAmount;
+        }
+
+        return 0;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

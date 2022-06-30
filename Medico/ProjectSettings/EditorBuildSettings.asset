@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PlayerScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Locations/SanJacobo.unity
+    guid: 3f8fbba09f0ee9640903bed48c64386c
   m_configObjects: {}

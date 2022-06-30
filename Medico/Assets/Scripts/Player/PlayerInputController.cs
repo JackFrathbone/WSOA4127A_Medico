@@ -60,10 +60,11 @@ public class PlayerInputController : MonoBehaviour
                         {
                             _dialogueController.StartDialogue(npc);
                             GameManager.Instance.Pause();
+                            GameManager.Instance.StopClock();
                         }
-                        else if (npc.npcState == NPCManager.NPCState.injured)
+                        else if (npc.npcState == NPCManager.NPCState.injured || npc.npcState == NPCManager.NPCState.dead)
                         {
-                            //If injured
+                            GameManager.Instance.playerHealingController.StartHealing(npc);
                         }
                         else
                         {

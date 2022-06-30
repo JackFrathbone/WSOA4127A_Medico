@@ -1,18 +1,27 @@
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class GameManager : Singleton<GameManager>
 {
+    [Header("Settings")]
+    private int _defaultScene = 1;
+
     [Header("References")]
     [HideInInspector] public PlayerController playerController;
     [HideInInspector] public PlayerInputController PlayerInputController;
+    [HideInInspector] public PlayerHealingController playerHealingController;
+    [HideInInspector] public PlayerInventory playerInventory;
     [HideInInspector] public TimeKeeper timeKeeper;
     [HideInInspector] public ClueManager clueManager;
+
     private TimeKeeper _timeKeeper;
 
     private void Start()
     {
         _timeKeeper = GetComponent<TimeKeeper>();
         StartClock();
+
+        LoadLocation(_defaultScene);
     }
 
     public void Pause()
@@ -61,5 +70,16 @@ public class GameManager : Singleton<GameManager>
         {
             return false;
         }
+    }
+
+    public void LoadLocation(int i)
+    {
+        SceneManager.LoadScene(i, LoadSceneMode.Additive);
+    }
+
+    public void UnloadLocation(int i)
+    {
+        SceneManager.UnloadSceneAsync(i);
+        Resources.UnloadUnusedAssets();
     }
 }

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfcda8a24fd8982498053935891f869c, type: 3}
   m_Name: Injury_ExoticSickness
   m_EditorClassIdentifier: 
-  _injuryName: ExoticSickness
-  _injurySeverityMin: 60
-  _injurySeverityMax: 180
+  injuryName: Exotic Sickness
+  injurySeverityMin: 60
+  injurySeverityMax: 180

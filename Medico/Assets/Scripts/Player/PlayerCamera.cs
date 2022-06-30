@@ -2,26 +2,20 @@ using UnityEngine;
 
 public class PlayerCamera : MonoBehaviour
 {
-    public float smoother;
-    public Transform target;
+    [SerializeField] Transform _target;
+    [SerializeField] float _smoothTime;
+
+    private Vector2 _velocity;
 
     private Camera _cam;
-    private Vector3 _velocity = Vector3.zero;
 
     private void Start()
     {
         _cam = GetComponent<Camera>();
     }
 
-    void FixedUpdate()
+    void Update()
     {
-        if (target)
-        {
-            Vector3 point = _cam.WorldToViewportPoint(target.position);
-            Vector3 delta = target.position - _cam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, point.z));
-            Vector3 destination = transform.position + delta;
-            transform.position = Vector3.SmoothDamp(transform.position, destination, ref _velocity, smoother);
-        }
-
+        transform.position = Vector2.SmoothDamp(transform.position, _target.position, ref _velocity, _smoothTime);
     }
 }

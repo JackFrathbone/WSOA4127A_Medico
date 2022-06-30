@@ -23,7 +23,7 @@ public class TimeKeeper : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log("Time keeping has started");
+        //Debug.Log("Time keeping has started");
         _timeUIText.text = GetTimeAsText();
 
         _timeTimer = _trackedTime + TimeSpan.FromHours(1);
@@ -53,12 +53,12 @@ public class TimeKeeper : MonoBehaviour
 
     private void OnDisable()
     {
-        Debug.Log("Time keeping has paused");
+        //Debug.Log("Time keeping has paused");
     }
 
     private void OnEnable()
     {
-        Debug.Log("Time keeping has continued");
+        //Debug.Log("Time keeping has continued");
     }
 
     private string GetTimeAsText()
