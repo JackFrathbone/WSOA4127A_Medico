@@ -170,8 +170,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
       propertyPath: _dialogues.Array.data[0].sentences.Array.data[4]
-      value: My job has just been to keep an eye on the business here in this god
-        forsaken shit hole. Until that friend of yours Dr. Luxembourg arrived.
+      value: My job has just been to keep an eye on the business in this god forsaken
+        shit hole. Until that friend of yours Dr. Luxembourg arrived.
       objectReference: {fileID: 0}
     - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
       propertyPath: _dialogues.Array.data[0].sentences.Array.data[5]
@@ -261,6 +261,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6090174459077876488, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
   m_PrefabInstance: {fileID: 98493097}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &98493099 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8712897408964882710, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
+  m_PrefabInstance: {fileID: 98493097}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &98493100 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
+  m_PrefabInstance: {fileID: 98493097}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 98493099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf80c225a3416ca42a26eaf2ac4b4421, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &98493101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 98493099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12d09304b3635c54f8ddc195f6212d2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _injuriesToAdd: []
+  timePassEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 98493100}
+        m_TargetAssemblyTypeName: NPCManager, Assembly-CSharp
+        m_MethodName: KillCharacter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _eventDay: 0
+  _eventHour: 24
 --- !u!1001 &150522765
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -309,8 +355,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
       propertyPath: _dialogues.Array.data[0].sentences.Array.data[4]
-      value: Just know that things are tense and I am man who deep down wants peace,
-        especially back home.
+      value: Just know that things are tense and I am man who deep down wants peace.
       objectReference: {fileID: 0}
     - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
       propertyPath: _dialogues.Array.data[0].sentences.Array.data[5]
@@ -320,11 +365,11 @@ PrefabInstance:
     - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
       propertyPath: _dialogues.Array.data[0].sentences.Array.data[6]
       value: "Save the K\xF6nigreich from any further embarrassment and keep the
-        guns silent back home for at least a few more years."
+        guns silent beween our nations for at least a few more years."
       objectReference: {fileID: 0}
     - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
       propertyPath: _dialogues.Array.data[0].sentences.Array.data[7]
-      value: Thats all for now Doctor. Now if there is anything I can do for you
+      value: That's all for now Doctor. Now if there is anything I can do for you
         in my official capacity...
       objectReference: {fileID: 0}
     - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
@@ -337,8 +382,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
       propertyPath: _dialogues.Array.data[0].sentences.Array.data[10]
-      value: If you could help them, that would prove your willingness to help us
-        against these upstart rebels. They are in the military camp on the eastern
+      value: If you could help them, that would prove your willingness to support
+        us against these upstart rebels. They are in the military camp on the eastern
         exit out of town
       objectReference: {fileID: 0}
     - target: {fileID: 6090174459077876488, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
@@ -1088,16 +1133,24 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
       propertyPath: charName
-      value: Sickly Soldier
+      value: Sickly Scout
       objectReference: {fileID: 0}
     - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
       propertyPath: hoursLeftToLive
       value: 36
       objectReference: {fileID: 0}
     - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
+      propertyPath: _dialogues.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
       propertyPath: currentInjuries.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
+      propertyPath: _dialogues.Array.data[0].clue
+      value: 
+      objectReference: {fileID: 11400000, guid: f5be57c71903e714f8dee98e5d00e742, type: 2}
     - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
       propertyPath: currentInjuries.Array.data[0]
       value: 
@@ -1106,6 +1159,38 @@ PrefabInstance:
       propertyPath: currentInjuries.Array.data[1]
       value: 
       objectReference: {fileID: 11400000, guid: 0700f3efd3ebff54496dfa81c6b0edf7, type: 2}
+    - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
+      propertyPath: _dialogues.Array.data[0].topic
+      value: Greeting
+      objectReference: {fileID: 0}
+    - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
+      propertyPath: _dialogues.Array.data[0].sentences.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
+      propertyPath: _dialogues.Array.data[0].sentences.Array.data[0]
+      value: Whew, I feel much better now sir, gracias.
+      objectReference: {fileID: 0}
+    - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
+      propertyPath: _dialogues.Array.data[0].sentences.Array.data[1]
+      value: There are foul airs out there in jungle, must have caught something
+        on patrol.
+      objectReference: {fileID: 0}
+    - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
+      propertyPath: _dialogues.Array.data[0].sentences.Array.data[2]
+      value: Those rebels have camps out there, but there must be routes into the
+        farmlands that they use.
+      objectReference: {fileID: 0}
+    - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
+      propertyPath: _dialogues.Array.data[0].sentences.Array.data[3]
+      value: From what we can tell they are split into at least two groups, one lead
+        by Pablo Sabe de Soto who has been attacking the plantations.
+      objectReference: {fileID: 0}
+    - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
+      propertyPath: _dialogues.Array.data[0].sentences.Array.data[4]
+      value: All I know is that he is an ex-slave, and hell bent on revenge against
+        the propietarios.
+      objectReference: {fileID: 0}
     - target: {fileID: 6090174459077876488, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -1151,12 +1236,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7984776545686036088, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7984776545686036088, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1799374116553911825, guid: 56220de6062fb22428552e5875df0ad7, type: 3}
     - target: {fileID: 8712897408964882710, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
       propertyPath: m_Name
-      value: Sickly Soldier
+      value: SicklyScout
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
@@ -1240,20 +1329,28 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
       propertyPath: charName
-      value: Wounded Scout
+      value: Wounded Soldier
       objectReference: {fileID: 0}
     - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
       propertyPath: hoursLeftToLive
-      value: 15
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
       propertyPath: minutesLeftToLive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
-      propertyPath: currentInjuries.Array.size
-      value: 4
+      propertyPath: _dialogues.Array.size
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
+      propertyPath: currentInjuries.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
+      propertyPath: _dialogues.Array.data[0].clue
+      value: 
+      objectReference: {fileID: 11400000, guid: 5c711bcb3967eea42ae953f70c7cf7a2, type: 2}
     - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
       propertyPath: currentInjuries.Array.data[0]
       value: 
@@ -1265,11 +1362,42 @@ PrefabInstance:
     - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
       propertyPath: currentInjuries.Array.data[2]
       value: 
-      objectReference: {fileID: 11400000, guid: 0700f3efd3ebff54496dfa81c6b0edf7, type: 2}
+      objectReference: {fileID: 11400000, guid: 66b8e14609de4e149a579c49ee5bcbdb, type: 2}
     - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
       propertyPath: currentInjuries.Array.data[3]
       value: 
       objectReference: {fileID: 11400000, guid: 66b8e14609de4e149a579c49ee5bcbdb, type: 2}
+    - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
+      propertyPath: _dialogues.Array.data[0].topic
+      value: Greeting
+      objectReference: {fileID: 0}
+    - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
+      propertyPath: _dialogues.Array.data[0].sentences.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
+      propertyPath: _dialogues.Array.data[0].sentences.Array.data[0]
+      value: 'Dios mio, I thought I was a dead man. After being shot one of the damned
+        rebels hacked me with his sword. '
+      objectReference: {fileID: 0}
+    - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
+      propertyPath: _dialogues.Array.data[0].sentences.Array.data[1]
+      value: It was awful, we drove them off but lost many good men, and poor Chupoco
+        is a burned heap now.
+      objectReference: {fileID: 0}
+    - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
+      propertyPath: _dialogues.Array.data[0].sentences.Array.data[2]
+      value: But I was saved by a strange foreign woman, she bound the wound on my
+        leg though it didnt stop the infection.
+      objectReference: {fileID: 0}
+    - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
+      propertyPath: _dialogues.Array.data[0].sentences.Array.data[3]
+      value: She seemed to be with the rebels too, not sure what to make of that...
+      objectReference: {fileID: 0}
+    - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
+      propertyPath: _dialogues.Array.data[0].sentences.Array.data[4]
+      value: Many of their men are campesinos, why do they attack the farms?
+      objectReference: {fileID: 0}
     - target: {fileID: 6090174459077876488, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1320,7 +1448,7 @@ PrefabInstance:
       objectReference: {fileID: -1799374116553911825, guid: 56220de6062fb22428552e5875df0ad7, type: 3}
     - target: {fileID: 8712897408964882710, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
       propertyPath: m_Name
-      value: Wounded Scout
+      value: WoundedSoldier
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
@@ -1384,11 +1512,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
       propertyPath: _dialogues.Array.data[0].sentences.Array.size
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
       propertyPath: _dialogues.Array.data[0].sentences.Array.data[0]
-      value: t
+      value: Halt! Who goes there?
+      objectReference: {fileID: 0}
+    - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
+      propertyPath: _dialogues.Array.data[0].sentences.Array.data[1]
+      value: Oh, you the doctor the governor was talking about?
+      objectReference: {fileID: 0}
+    - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
+      propertyPath: _dialogues.Array.data[0].sentences.Array.data[2]
+      value: I've got two men back there, in a bad state. We need any help we can
+        get, it's bad out there.
+      objectReference: {fileID: 0}
+    - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
+      propertyPath: _dialogues.Array.data[0].sentences.Array.data[3]
+      value: You don't have supplies? Why would you come halfway across the world
+        and not bring your own medicine? Tourist? There's a war on!
+      objectReference: {fileID: 0}
+    - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
+      propertyPath: _dialogues.Array.data[0].sentences.Array.data[4]
+      value: Well go ask the customs officer to let you into the storehouse, i'm
+        sure we have enough bandages there for you to work with.
+      objectReference: {fileID: 0}
+    - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
+      propertyPath: _dialogues.Array.data[0].sentences.Array.data[5]
+      value: If you need medicine, the priest gets some stuff from Dr. Ortiz now
+        and then, though he rarely touches it. Maybe ask him?
       objectReference: {fileID: 0}
     - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
       propertyPath: _dialogues.Array.data[0].dialogueEvent.m_PersistentCalls.m_Calls.Array.size
@@ -1461,6 +1613,10 @@ PrefabInstance:
     - target: {fileID: 6090174459077876488, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7984776545686036088, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
+      propertyPath: m_FlipX
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7984776545686036088, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
       propertyPath: m_Sprite

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -83,6 +81,7 @@ public class DialogueController : MonoBehaviour
             if (dialogue.CheckPass())
             {
                 _currentTargetDialogue = dialogue;
+                return;
             }
         }
     }

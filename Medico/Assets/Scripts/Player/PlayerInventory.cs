@@ -69,21 +69,27 @@ public class PlayerInventory : MonoBehaviour
         {
             case "bandage":
                 _bandageAmount -= amount;
+                GameManager.Instance.timeKeeper.AddTime(15);
                 break;
             case "gauze":
                 _GauzeAmount -= amount;
+                GameManager.Instance.timeKeeper.AddTime(15);
                 break;
             case "antiSeptic":
                 _AntisepticAmount -= amount;
+                GameManager.Instance.timeKeeper.AddTime(10);
                 break;
             case "antiBiotic":
                 _AntibioticAmount -= amount;
+                GameManager.Instance.timeKeeper.AddTime(30);
                 break;
             case "medicine":
                 _MedicineAmount -= amount;
+                GameManager.Instance.timeKeeper.AddTime(45);
                 break;
             case "herbalRemedy":
                 _HerbalremedyAmount -= amount;
+                GameManager.Instance.timeKeeper.AddTime(60);
                 break;
         }
 

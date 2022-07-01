@@ -82,4 +82,10 @@ public class GameManager : Singleton<GameManager>
         SceneManager.UnloadSceneAsync(i);
         Resources.UnloadUnusedAssets();
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
 }

@@ -207,4 +207,9 @@ public class NPCManager : MonoBehaviour
     {
         gameObject.transform.position = target.position;
     }
+
+    public void KillCharacter()
+    {
+        UpdateNPCState(NPCState.dead);
+    }
 }
