@@ -65,17 +65,29 @@ public class TimeKeeper : MonoBehaviour
     {
         string roughTime;
 
-        if (_trackedTime.Hours >= 10 && _trackedTime.Hours <= 14)
+        if (_trackedTime.Hours < 6)
+        {
+            roughTime = "Early Morning";
+        }
+        else if (_trackedTime.Hours >= 6 && _trackedTime.Hours < 10)
+        {
+            roughTime = "Late Morning";
+        }
+        else if (_trackedTime.Hours >= 10 && _trackedTime.Hours < 14)
         {
             roughTime = "Midday";
         }
-        else if (_trackedTime.Hours > 14)
+        else if (_trackedTime.Hours >= 14 && _trackedTime.Hours < 18)
         {
-            roughTime = "Late";
+            roughTime = "Afternoon";
+        }
+        else if (_trackedTime.Hours >= 18 && _trackedTime.Hours < 20)
+        {
+            roughTime = "Evening";
         }
         else
         {
-            roughTime = "Early";
+            roughTime = "Midnight";
         }
 
         return "Day " + _trackedTime.Days + " " + roughTime;

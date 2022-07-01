@@ -7,11 +7,14 @@ public class ClueManager : MonoBehaviour
     [Header("References")]
     [SerializeField] GameObject _cluePrefab;
     [SerializeField] GameObject _journalClueParent;
+    [SerializeField] Clue _startingClue;
     private List<Clue> cluesFound = new List<Clue>();
 
     private void Start()
     {
+        AddClue(_startingClue);
         GameManager.Instance.clueManager = this;
+
     }
 
     public void AddClue(Clue clue)

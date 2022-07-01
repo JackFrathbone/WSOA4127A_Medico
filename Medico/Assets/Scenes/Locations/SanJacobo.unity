@@ -1764,7 +1764,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
       propertyPath: _dialogues.Array.data[1].sentences.Array.data[0]
-      value: "Hola se\xF1or, welcome to San Jacobo."
+      value: "Hola se\xF1or, welcome to San Jacobo, the capital port of Nueva M\xE9rida."
       objectReference: {fileID: 0}
     - target: {fileID: -2202771610169223486, guid: 4d94bec3a5ae7614cabd67b6fb2b1d93, type: 3}
       propertyPath: _dialogues.Array.data[1].sentences.Array.data[1]

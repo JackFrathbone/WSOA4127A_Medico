@@ -19,7 +19,8 @@ public class GameManager : Singleton<GameManager>
     private void Start()
     {
         _timeKeeper = GetComponent<TimeKeeper>();
-        StartClock();
+        Pause();
+        StopClock();
 
         LoadLocation(_defaultScene);
     }
