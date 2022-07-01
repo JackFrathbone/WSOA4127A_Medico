@@ -55,6 +55,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8533099964664582845, guid: e0ef6792b0b076a4fa21cf320762aa41, type: 3}
+      propertyPath: m_Color.b
+      value: 0.07028895
+      objectReference: {fileID: 0}
+    - target: {fileID: 8533099964664582845, guid: e0ef6792b0b076a4fa21cf320762aa41, type: 3}
+      propertyPath: m_Color.g
+      value: 0.4056604
+      objectReference: {fileID: 0}
+    - target: {fileID: 8533099964664582845, guid: e0ef6792b0b076a4fa21cf320762aa41, type: 3}
+      propertyPath: m_Color.r
+      value: 0.047837302
+      objectReference: {fileID: 0}
     - target: {fileID: 8533099964664582847, guid: e0ef6792b0b076a4fa21cf320762aa41, type: 3}
       propertyPath: m_Name
       value: Item_AntiSeptic

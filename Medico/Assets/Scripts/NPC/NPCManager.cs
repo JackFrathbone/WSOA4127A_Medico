@@ -202,4 +202,9 @@ public class NPCManager : MonoBehaviour
 
         _timeLeftToLive -= t;
     }
+
+    public void MoveCharacterToLocation(Transform target)
+    {
+        gameObject.transform.position = target.position;
+    }
 }

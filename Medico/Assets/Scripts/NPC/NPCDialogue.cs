@@ -2,11 +2,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-[CreateAssetMenu(fileName = "Dialogue", menuName = "ScriptableObjects/Dialogue", order = 1)]
-public class NPCDialogue : ScriptableObject
+[System.Serializable]
+public class NPCDialogue
 {
     //Temporary solution, stops this from saving between plays
     [System.NonSerialized] public bool hasRun = false;
+    public string topic;
     [TextArea(3, 10)]
     public string[] sentences;
 
@@ -44,3 +45,4 @@ public class NPCDialogue : ScriptableObject
         }
     }
 }
+  

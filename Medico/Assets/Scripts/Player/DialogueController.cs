@@ -34,14 +34,6 @@ public class DialogueController : MonoBehaviour
             _dialogueUI.SetActive(true);
             _dialogueCharacterName.text = _currentTargetNPC.charName;
             _dialogueBodyText.text = _currentTargetDialogue.sentences[_onDialogue];
-
-            _currentTargetDialogue.hasRun = true;
-            _currentTargetDialogue.dialogueEvent.Invoke();
-
-            if(_currentTargetDialogue.clue != null)
-            {
-                GameManager.Instance.clueManager.AddClue(_currentTargetDialogue.clue);
-            }
         }
         else
         {
@@ -64,6 +56,17 @@ public class DialogueController : MonoBehaviour
         }
         else 
         {
+            if(_currentTargetDialogue != null)
+            {
+                _currentTargetDialogue.hasRun = true;
+                _currentTargetDialogue.dialogueEvent.Invoke();
+
+                if (_currentTargetDialogue.clue != null)
+                {
+                    GameManager.Instance.clueManager.AddClue(_currentTargetDialogue.clue);
+                }
+            }
+     
             _dialogueUI.SetActive(false);
             GameManager.Instance.UnPause();
             GameManager.Instance.StartClock();

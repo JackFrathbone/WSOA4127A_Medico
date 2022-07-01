@@ -153,6 +153,8 @@ public class PlayerHealingController : MonoBehaviour
                         {
                             _healingTargetNPC.AddInjury(_failureInjuries[3], true);
                         }
+
+                        usedAntiSeptic = false;
                     }
                     break;
                 case "Gauze":
@@ -167,10 +169,12 @@ public class PlayerHealingController : MonoBehaviour
                         {
                             _healingTargetNPC.AddInjury(_failureInjuries[3], true);
                         }
+
+                        usedAntiSeptic = false;
                     }
                     break;
                 case "Anti-Septic":
-                    if (GameManager.Instance.playerInventory.GetTreatmentAmount("antiSeptic") > 0 && GetTreatmentPassPercentage(_selectedTreatmentText, _selectedInjuryText) != 0)
+                    if (GameManager.Instance.playerInventory.GetTreatmentAmount("antiSeptic") > 0)
                     {
                         GameManager.Instance.playerInventory.UseTreatment("antiSeptic", 1);
                         usedAntiSeptic = true;
@@ -255,10 +259,10 @@ public class PlayerHealingController : MonoBehaviour
     private int GetTreatmentPassPercentage(string selectedTreatment, string selectedInjury)
     {
         int antiSepticBonus = 0;
+
         if (usedAntiSeptic)
         {
             antiSepticBonus = 10;
-            usedAntiSeptic = false;
         }
 
 

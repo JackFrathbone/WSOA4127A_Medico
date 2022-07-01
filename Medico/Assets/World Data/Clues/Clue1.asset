@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e7a002b82d876a4b85fbba78693dcdc, type: 3}
-  m_Name: PassedCheck
+  m_Script: {fileID: 11500000, guid: 45f650558b3ea5c4cb733101a151d86c, type: 3}
+  m_Name: Clue1
   m_EditorClassIdentifier: 
-  eventPassed: 0
-  eventDescription: 
+  _clueText: Dr. Luxembourg was staying with a Dr. Jorge Ortiz Rodriguez at his hacienda,
+    working on a cure to the new plague.
