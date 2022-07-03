@@ -4088,7 +4088,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'VT323 Font by Peter Hull licensed under SIL Open Font License(OFL)
 
-    
+
 
     1-Bit
     Pack by Kenney licensed under CC0'
@@ -6373,7 +6373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3bb9bdfb6dd9ab479a4537f097e666a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeScale: 2
+  _timeScale: 1
   _timeUIText: {fileID: 1482592981}
 --- !u!1 &1531054351
 GameObject:
